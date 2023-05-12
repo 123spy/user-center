@@ -13,7 +13,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * Knife4j文档配置
  */
-
 @Configuration
 @EnableSwagger2
 @Profile("dev")

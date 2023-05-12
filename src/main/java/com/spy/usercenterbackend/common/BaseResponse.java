@@ -9,10 +9,19 @@ import lombok.Data;
 @Data
 public class BaseResponse<T> {
 
+    /**
+     * 状态码
+     */
     private Integer code;
 
+    /**
+     * 数据
+     */
     private T data;
 
+    /**
+     * 信息
+     */
     private String message;
 
     public BaseResponse(Integer code, T data, String message) {

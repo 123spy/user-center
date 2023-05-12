@@ -12,10 +12,10 @@ create table user
     userPassword varchar(512)                       null,
     phone        varchar(128)                       null,
     email        varchar(512)                       null,
-    userStatus   int      default 0                 not null,
-    isDelete     tinyint  default 0                 not null,
-    userRole     int      default 0                 null comment '用户角色：0普通用户 1管理员',
+    userStatus   int      default 0                 not null comment '帐号状态 0正常 1异常',
+    userRole     varchar(255)   default 'user'      null comment '用户角色：user普通用户 admin管理员',
     createTime   datetime default CURRENT_TIMESTAMP null,
-    updateTime   datetime default CURRENT_TIMESTAMP null on update CURRENT_TIMESTAMP
+    updateTime   datetime default CURRENT_TIMESTAMP null on update CURRENT_TIMESTAMP,
+    isDelete     tinyint  default 0                 not null
 );
 

@@ -3,6 +3,9 @@ package com.spy.usercenterbackend.modal.dto.common;
 import com.spy.usercenterbackend.constant.CommonConstant;
 import lombok.Data;
 
+/**
+ * 通用页表查询类
+ */
 @Data
 public class PageRequest {
 

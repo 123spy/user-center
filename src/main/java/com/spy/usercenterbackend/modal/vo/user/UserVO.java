@@ -1,12 +1,19 @@
-package com.spy.usercenterbackend.modal.dto.user;
+package com.spy.usercenterbackend.modal.vo.user;
 
 import lombok.Data;
 
+import java.util.Date;
+
 /**
- * 用户添加类
+ * 用户视图类
  */
 @Data
-public class UserAddRequest {
+public class UserVO {
+    /**
+     * 用户ID
+     */
+    private Long id;
+
     /**
      * 用户账号
      */
@@ -23,17 +30,12 @@ public class UserAddRequest {
     private String avatarUrl;
 
     /**
-     * 密码
-     */
-    private String userPassword;
-
-    /**
      * 用户手机号
      */
     private String phone;
 
     /**
-     * 邮箱
+     * 用户邮箱
      */
     private String email;
 
@@ -46,4 +48,14 @@ public class UserAddRequest {
      * 用户状态
      */
     private Integer userStatus;
+
+    /**
+     * 创建时间
+     */
+    private Date createTime;
+
+    /**
+     * 更新时间
+     */
+    private Date updateTime;
 }

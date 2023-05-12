@@ -10,11 +10,9 @@ import org.springframework.context.annotation.Configuration;
 /**
  * MyBatisPlus全局配置
  */
-
 @Configuration
 @MapperScan("com.spy.usercenterbackend.mapper")
 public class MyBatisPlusConfig {
-
     @Bean
     public MybatisPlusInterceptor mybatisPlusInterceptor() {
         MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
