@@ -2,7 +2,6 @@ server:
   port: 8088
   servlet:
     context-path: /api
-    # session 30 ???
     session:
       timeout: "P30D"
       cookie:
